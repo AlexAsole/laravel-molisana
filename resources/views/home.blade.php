@@ -121,7 +121,7 @@ $data = '[
     "descrizione": "Altro elemento cult della famiglia de lo Spaghetto Quadrato (N.1 Spaghetto Quadrato. Una new entry che sarà molto apprezzata sia dai consumatori che dagli chef, perché il Ditale Quadrato è un formato deliziosamente piccolo ma sostanzioso.<br>A dispetto del nome che fa pensare ad una pastina è un formato di pasta assolutamente versatile, adatto a moltissime ricette di primi piatti.<br>La sua consistenza soda si sprigiona in bocca con un\'esplosione di emozioni, grazie agli spessori corposi, al colore elegantemente ambrato, alla texture delicatamente ruvida, cangiante e piacevolissima al tatto che trattiene il condimento sulla superficie.<br>Il Ditale Quadrato sembra ideale per preparazioni strutturate come la ricetta con crema di broccoletto siciliano, calamari e pomodori semi secchi profumata al limone e carbone d\'olive nere."
   }
   ]';
-$array = json_decode($data, true);
+$pastaList = json_decode($data, true);
 
 @endphp
 
@@ -132,13 +132,42 @@ $array = json_decode($data, true);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>La Molisana - Home</title>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link rel='preconnect' href='https://fonts.gstatic.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap' rel='stylesheet'>"
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
-
 <body>
 
-  {{$array[0]['descrizione']}}
+  <div class="container">
+    
+    @include('partials.header')
+
+    <h1>Lunga</h1>
+    @foreach ($pastaList as $key => $pasta)
+      @if ($pasta['tipo'] === 'lunga')
+        <a href="product/{{$key}}">{{$pasta['titolo']}}</a> <br>
+      @endif
+    @endforeach
+
+    <h1>Corta</h1>
+    @foreach ($pastaList as $key => $pasta)
+      @if ($pasta['tipo'] === 'corta')
+        <a href="product/{{$key}}">{{$pasta['titolo']}}</a> <br>
+      @endif
+    @endforeach
+
+    <h1>Cortissima</h1>
+    @foreach ($pastaList as $key => $pasta)
+      @if ($pasta['tipo'] === 'cortissima')
+        <a href="product/{{$key}}">{{$pasta['titolo']}}</a> <br>
+      @endif
+    @endforeach
+
+    @include('partials.footer')
+
+  </div>
+
+  
 
 </body>
 

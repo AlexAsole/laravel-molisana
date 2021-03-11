@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/product/{id}', function () {
+Route::get('/product/{id}', function ($id) {
     return view('product',
         ['id' => $id]
     );
