@@ -2,7 +2,7 @@
     <img src="{{asset('img/logo.png')}}" alt="">
     <div class="navbar">
         <ul>
-            <li>Home</li>
+            <li><a href="/">Home</a></li>
             <li>Prodotti</li>
             <li>News</li>
         </ul>

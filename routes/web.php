@@ -22,6 +22,9 @@ Route::get('/', function () {
 
 Route::get('/product/{id?}', function ($id=null) {
     $pasta = config('pasta');
+    if(empty($id) || $id > count($pasta)) {
+        return redirect('/');
+    }
     return view('product',[
         'id' => $id,
         'pastaList' => $pasta
