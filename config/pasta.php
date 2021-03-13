@@ -33,7 +33,7 @@ $data = '[
     {
       "src": "https://www.lamolisana.it/wp-content/uploads/2017/06/7-mezze-linguine-m.jpg",
       "src-h": "https://www.lamolisana.it/wp-content/uploads/2017/06/7-mezze-linguine-h.jpg",
-      "src-p": "https://www.lamolisana.it/wp-content/uploads/2017/06/7-mezze-linguine-p.jpg",
+      "src-p": "https://www.lamolisana.it/wp-content/uploads/2017/06/7-mezze-linguine-p-2018.jpg",
       "titolo": "N.7 Mezze Linguine",
       "tipo": "lunga",
       "cottura": "11 min",
@@ -103,7 +103,7 @@ $data = '[
     {
       "src": "https://www.lamolisana.it/wp-content/uploads/2017/07/58-misto-corto-m.jpg",
       "src-h": "https://www.lamolisana.it/wp-content/uploads/2017/07/58-misto-corto-h.jpg",
-      "src-p": "https://www.lamolisana.it/wp-content/uploads/2017/07/58-misto-corto-p.jpg",
+      "src-p": "https://www.lamolisana.it/wp-content/uploads/2017/07/58-misto-corto-p-2018.jpg",
       "titolo": "N.58 Misto corto",
       "tipo": "corta",
       "cottura": "9 min",
