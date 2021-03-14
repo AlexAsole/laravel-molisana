@@ -73,6 +73,12 @@ body .product .type {
 body .product .pack {
   width: 900px;
 }
+body .product ol {
+  margin: 20px;
+}
+body .product ol li {
+  margin-top: 20px;
+}
 body .product .prev {
   display: flex;
   justify-content: center;
