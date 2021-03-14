@@ -1,0 +1,27 @@
+@mixin list {
+    .list {
+        background: url('../../public/img/background.jpg');
+        background-size: contain;
+
+        h1 {
+            font-weight: 400;
+            margin-left: 120px;
+            padding-top: 20px;
+            color: $midnightBlue;
+        }
+
+        .long, .short, .shortest {
+            margin: 0 auto;
+            padding: 50px 0;
+            width: 1300px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .poster {
+                width: 400px;
+                height: 275px;
+                margin: 0 10px 20px 10px;
+            }
+        }
+    }
+}

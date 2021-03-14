@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,9 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
-
   @include('partials.header')
-
   <div class="list">
     <h1>Le Lunghe</h1>
     <div class="long">
@@ -21,7 +18,6 @@
         @endif
       @endforeach
     </div>
-    
     <h1>Le Corte</h1>
     <div class="short">
       @foreach ($pastaList as $key => $pasta)
@@ -30,7 +26,6 @@
         @endif
       @endforeach
     </div>
-    
     <h1>Le Cortissime</h1>
     <div class="shortest">
       @foreach ($pastaList as $key => $pasta)
@@ -38,18 +33,8 @@
           <a href="product/{{$key + 1}}"><img src="{{$pasta['src']}}" class="poster" alt=""></a> <br>
         @endif
       @endforeach
-
     </div>
-    
   </div>
-    
-
   @include('partials.footer')
-
-  
-
-  
-
 </body>
-
 </html>

@@ -1,0 +1,47 @@
+@mixin product {
+    .product {
+        width: 100%;
+        height: 1032px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $powderBlue;
+        position: relative;
+
+        .type {
+            width: 700px;
+        }
+
+        .pack {
+            width: 900px;
+        }
+
+        ol {
+            margin: 20px;
+            li {
+                margin-top: 20px;
+            }
+        }
+
+        .prev {
+            @include arrow;
+            left: 40px;
+        }
+
+        .next {
+            @include arrow;
+            right: -40px;
+        }
+
+        i {
+            font-size: 60px;
+            color: $white;
+        }
+
+        .description {
+            width: 1300px;
+            color: $midnightBlue;
+            margin-bottom: 50px;
+        }
+    }
+}

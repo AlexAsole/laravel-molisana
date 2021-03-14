@@ -87,9 +87,9 @@ body .product .prev {
   height: 120px;
   transform: translate(-50%, -50%);
   position: absolute;
-  left: 40px;
   top: 450px;
   background: #b2e5fc;
+  left: 40px;
 }
 body .product .next {
   display: flex;
@@ -99,9 +99,9 @@ body .product .next {
   height: 120px;
   transform: translate(-50%, -50%);
   position: absolute;
-  right: -40px;
   top: 450px;
   background: #b2e5fc;
+  right: -40px;
 }
 body .product i {
   font-size: 60px;

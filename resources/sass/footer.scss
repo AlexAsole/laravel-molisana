@@ -1,0 +1,21 @@
+@mixin footer {
+    .footer{
+        width: 1300px;
+        height: 450px;
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-between;
+        color: $regentGray;
+        
+        &-1, &-2, &-3 {
+            ul {
+                list-style: none;
+    
+                li {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+    
+}

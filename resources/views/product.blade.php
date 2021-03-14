@@ -13,7 +13,6 @@
     <div class="product">
       <img src="{{$pastaList[$id - 1]['src-h']}}" class="type" alt="">
       <img src="{{$pastaList[$id - 1]['src-p']}}" class="pack" alt="">
-
       <div class="prev">
         @if (($id) == 1)
           <a href="/product/{{count($pastaList)}}">
@@ -23,7 +22,6 @@
           <i class="fas fa-chevron-left"></i>
           </a>
       </div>
-
       <div class="next">
         @if (($id) == count($pastaList))
           <a href="/product/1">
@@ -33,11 +31,9 @@
           <i class="fas fa-chevron-right"></i>
           </a>
       </div>
-
       <div class="description">
         {!!$pastaList[$id - 1]['descrizione']!!}
       </div>
-
     </div>
   @include('partials.footer')
 </body>
